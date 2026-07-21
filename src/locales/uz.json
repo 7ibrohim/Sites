@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "home": "Bosh sahifa",
+    "courses": "Kurslar",
+    "results": "Natijalar",
+    "services": "Xizmatlar"
+  },
+  "hero": {
+    "title": "Kelajagingizni kod bilan yozing",
+    "text": "Frontend, Backend va Mobile yo'nalishlarida amaliyotga asoslangan kurslar. Real loyihalar ustida ishlaysiz va portfolio bilan bitirasiz.",
+    "btnPrimary": "Kursga yozilish",
+    "btnSecondary": "Yo'nalishlarni ko'rish"
+  },
+  "directions": {
+    "title": "Yo'nalishlarimiz",
+    "subtitle": "O'zingizga mos yo'nalishni tanlang va o'rganishni boshlang",
+    "frontend": {
+      "name": "Frontend",
+      "desc": "HTML, CSS, JavaScript va React yordamida zamonaviy interfeyslar yaratish"
+    },
+    "backend": {
+      "name": "Backend",
+      "desc": "Node.js va ma'lumotlar bazasi bilan server tomonini qurish"
+    },
+    "mobile": {
+      "name": "Mobile",
+      "desc": "React Native yordamida mobil ilovalar yaratish"
+    }
+  },
+  
+  "results": {
+    "title": "Bizning natijalarimiz",
+    "subtitle": "Raqamlar o'zi uchun gapiradi",
+    "graduates": "Bitiruvchilar",
+    "employed": "Ish bilan ta'minlash",
+    "rating": "O'rtacha reyting"
+  },
+   "services": {
+    "title": "Xizmatlarimiz",
+    "subtitle": "O'quv jarayonini qulay va samarali qilish uchun taklif etamiz",
+    "mentorship": {
+      "name": "Mentorlik",
+      "desc": "Har bir talaba uchun shaxsiy mentor va muntazam fikr-mulohaza"
+    },
+    "projects": {
+      "name": "Amaliy loyihalar",
+      "desc": "Real bozor talablariga mos loyihalar ustida ishlash imkoniyati"
+    },
+    "support": {
+      "name": "Doimiy yordam",
+      "desc": "Kurs davomida va bitirgandan keyin ham qo'llab-quvvatlash"
+    }
+  },
+  "enroll": {
+    "title": "Kursga yozilish",
+    "subtitle": "Ma'lumotlaringizni qoldiring, tez orada bog'lanamiz",
+    "name": "To'liq ismingiz",
+    "phone": "Telefon raqamingiz",
+    "course": "Yo'nalish",
+    "submit": "Yuborish",
+    "sending": "Yuborilmoqda...",
+    "success": "So'rovingiz qabul qilindi! Tez orada siz bilan bog'lanamiz.",
+    "error": "Xatolik yuz berdi, qaytadan urinib ko'ring."
+  },
+  "contact": {
+    "badge": "Telegram orqali tez javob",
+    "title": "Bugun boshlang!",
+    "subtitle": "Ma'lumotlaringizni qoldiring, mutaxassislarimiz siz bilan bog'lanadi"
+  },
+  "footer": {
+    "tagline": "Zamonaviy IT ko'nikmalarni o'rganing va kelajagingizni bugundan quring.",
+    "navigation": "Navigatsiya",
+    "contact": "Aloqa",
+    "address": "Namangan, O'zbekiston",
+    "follow": "Bizni kuzating",
+    "rights": "Barcha huquqlar himoyalangan."
+  }
+
+}

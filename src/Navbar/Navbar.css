@@ -1,0 +1,390 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .Big {
+     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+     background: #f4f6fa;
+     /* min-height: 100vh; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* padding: 1.5rem; */
+     width: 100%;
+ }
+
+ .Navbar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     gap: 1rem 2rem;
+     background: #ffffff;
+     padding: 0.85rem 2rem;
+     /* border-radius: 60px; */
+     box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
+     width: 100%;
+     /* max-width: 1500px; */
+     border: 1px solid rgba(214, 64, 69, 0.08);
+     transition: box-shadow 0.25s ease, border-color 0.25s;
+ }
+
+
+ .Navbar ul:first-child {
+     display: flex;
+     align-items: center;
+     list-style: none;
+ }
+
+ .Navbar ul:first-child li img {
+     display: block;
+     height: 42px;
+     width: auto;
+ }
+
+ .Navbar ul:nth-child(2) {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem 1.8rem;
+     list-style: none;
+     flex-wrap: wrap;
+     padding: 0.2rem 0;
+ }
+
+ .Navbar ul:nth-child(2) li {
+     font-size: 1rem;
+     font-weight: 500;
+     color: #1e1e2a;
+     padding: 0.4rem 0.2rem;
+     cursor: default;
+     position: relative;
+     transition: color 0.2s ease;
+     letter-spacing: -0.01em;
+ }
+
+ .Navbar ul:nth-child(2) li::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0%;
+     height: 2.5px;
+     background: #F4C21A;
+     border-radius: 4px;
+     transition: width 0.25s ease;
+ }
+
+ .Navbar ul:nth-child(2) li:hover::after {
+     width: 100%;
+ }
+
+ .Navbar ul:last-child {
+     display: flex;
+     align-items: center;
+     gap: 0.4rem 0.8rem;
+     list-style: none;
+     flex-wrap: wrap;
+ }
+
+ .Navbar ul:last-child li {
+     /* display: flex; */
+     align-items: center;
+     justify-content: center;
+     font-size: 1.4rem;
+     color: #1e1e2a;
+     width: 40px;
+     height: 40px;
+     border-radius: 40px;
+     background: transparent;
+     transition: all 0.2s ease;
+     cursor: pointer;
+     border: 1px solid transparent;
+ }
+
+ .Navbar ul:last-child li {
+     color: #F4C21A;
+     ;
+ }
+
+
+ .Navbar ul:last-child li i {
+     font-size: 1.3rem;
+     line-height: 1;
+ }
+
+ @media (max-width: 850px) {
+     .Navbar {
+         padding: 1rem 1.5rem;
+         border-radius: 40px;
+         flex-direction: column;
+         align-items: stretch;
+         gap: 0.8rem;
+     }
+
+     .Navbar ul:first-child,
+     .Navbar ul:nth-child(2),
+     .Navbar ul:last-child {
+         justify-content: center;
+     }
+
+     .Navbar ul:nth-child(2) {
+         gap: 0.3rem 1.2rem;
+     }
+
+     .Navbar ul:nth-child(2) li {
+         font-size: 0.95rem;
+         padding: 0.3rem 0.1rem;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .Navbar {
+         padding: 0.8rem 1rem;
+         border-radius: 32px;
+     }
+
+     .Navbar ul:first-child li img {
+         height: 34px;
+     }
+
+     .Navbar ul:nth-child(2) {
+         gap: 0.2rem 0.9rem;
+     }
+
+     .Navbar ul:nth-child(2) li {
+         font-size: 0.85rem;
+     }
+
+     .Navbar ul:last-child li {
+         width: 34px;
+         height: 34px;
+         font-size: 1.1rem;
+     }
+
+     .Navbar ul:last-child li i {
+         font-size: 1rem;
+     }
+ }
+
+ .mediasi-misol {
+     margin-top: 1.8rem;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     gap: 0.6rem 1.2rem;
+     background: #ffffff;
+     padding: 0.7rem 1.5rem;
+     border-radius: 60px;
+     border: 1px solid rgba(214, 64, 69, 0.1);
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+     max-width: 1100px;
+     width: 100%;
+ }
+
+ .mediasi-misol span {
+     display: flex;
+     align-items: center;
+     gap: 0.4rem;
+     font-size: 0.9rem;
+     font-weight: 500;
+     color: #1e1e2a;
+     padding: 0.25rem 0.7rem;
+     border-radius: 30px;
+     transition: all 0.15s ease;
+     border: 1px solid transparent;
+ }
+
+ .mediasi-misol span i {
+     color: #d64045;
+     /* logo rangi */
+     font-size: 1rem;
+     transition: transform 0.2s;
+ }
+
+ .mediasi-misol span:hover {
+     background: rgba(214, 64, 69, 0.04);
+     border-color: rgba(214, 64, 69, 0.15);
+ }
+
+ .mediasi-misol span:hover i {
+     transform: scale(1.12);
+     color: #b82e33;
+ }
+
+ .mediasi-misol .badge {
+     background: rgba(214, 64, 69, 0.08);
+     padding: 0.2rem 0.9rem;
+     border-radius: 40px;
+     font-size: 0.75rem;
+     font-weight: 600;
+     color: #d64045;
+     letter-spacing: 0.3px;
+     text-transform: uppercase;
+ }
+ /* ================= DARK MODE ================= */
+body.dark {
+    background: #14151a;
+}
+
+body.dark .Navbar {
+    background: #1e1f26;
+    border-color: rgba(244, 194, 26, 0.1);
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+body.dark .Navbar ul:nth-child(2) li {
+    color: #f1f1f5;
+}
+
+body.dark .Navbar ul:last-child li {
+    color: #F4C21A;
+}
+
+body.dark .mediasi-misol {
+    background: #1e1f26;
+    border-color: rgba(244, 194, 26, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .mediasi-misol span {
+    color: #f1f1f5;
+}
+
+body.dark .mediasi-misol span:hover {
+    background: rgba(244, 194, 26, 0.06);
+    border-color: rgba(244, 194, 26, 0.2);
+}
+
+body.dark .mediasi-misol .badge {
+    background: rgba(244, 194, 26, 0.1);
+    color: #F4C21A;
+}
+
+/* ================= LANGUAGE DROPDOWN ================= */
+.lang-switcher {
+    position: relative;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(214, 64, 69, 0.08);
+    overflow: hidden;
+    min-width: 70px;
+    z-index: 10;
+}
+
+.lang-dropdown span {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1e1e2a;
+    cursor: pointer;
+    transition: background 1.2s ease;
+}
+
+.lang-dropdown span:hover {
+    background: rgba(244, 194, 26, 0.15);
+    color: #F4C21A;
+}
+
+body.dark .lang-dropdown {
+    background: #1e1f26;
+    border-color: rgba(244, 194, 26, 0.1);
+}
+
+body.dark .lang-dropdown span {
+    color: #f1f1f5;
+}
+
+body.dark .lang-dropdown span:hover {
+    background: rgba(244, 194, 26, 0.1);
+    color: #F4C21A;
+}
+/* ================= HAMBURGER BUTTON ================= */
+.hamburger-btn {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .hamburger-btn {
+        display: flex !important;
+    }
+
+    /* Havolalarni default holatda yashiramiz */
+    .Navbar ul.nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+        background: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(214, 64, 69, 0.08);
+        margin-top: 0.5rem;
+    }
+
+    .Navbar ul.nav-links.active {
+        display: flex;
+        animation: slideDown 0.25s ease;
+    }
+
+    .Navbar ul.nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 0.9rem 0;
+        border-bottom: 1px solid rgba(214, 64, 69, 0.08);
+    }
+
+    .Navbar ul.nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .Navbar ul.nav-links li::after {
+        display: none; /* pastki chiziqni mobil menyuda o'chiramiz */
+    }
+
+    .Navbar ul.nav-links li:hover {
+        background: rgba(244, 194, 26, 0.08);
+        color: #d64045;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= DARK MODE - HAMBURGER MENU ================= */
+body.dark .Navbar ul.nav-links {
+    background: #1e1f26;
+    border-color: rgba(244, 194, 26, 0.1);
+}
+
+body.dark .Navbar ul.nav-links li {
+    border-bottom-color: rgba(244, 194, 26, 0.08);
+}
+
+body.dark .Navbar ul.nav-links li:hover {
+    background: rgba(244, 194, 26, 0.1);
+    color: #F4C21A;
+}

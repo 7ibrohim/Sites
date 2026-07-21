@@ -1,0 +1,129 @@
+.Footer {
+    background: #14151f;
+    color: #e6e8eb;
+    padding: 3.5rem 2rem 0;
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.bigfoot{
+    width: 100%;
+}
+.footer-top {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.5rem;
+    width: 100%;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    
+}
+
+.footer-brand {
+    max-width: 260px;
+}
+
+.footer-brand img {
+    height: 38px;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: #8a8a9c;
+    line-height: 1.5;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 0.4rem;
+}
+
+.footer-links span {
+    font-size: 0.9rem;
+    color: #8a8a9c;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    width: fit-content;
+}
+
+.footer-links span:hover {
+    color: #F4C21A;
+}
+
+.footer-contact p {
+    font-size: 0.9rem;
+    color: #8a8a9c;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    color: #e6e8eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.social-icons a:hover {
+    background: #F4C21A;
+    color: #14151f;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.4rem 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.82rem;
+    color: #6a6a7c;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 700px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-links,
+    .footer-contact {
+        align-items: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

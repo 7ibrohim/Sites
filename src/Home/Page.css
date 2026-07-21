@@ -1,0 +1,116 @@
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-left {
+    flex: 1 1 420px;
+    max-width: 520px;
+}
+
+.hero-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #1e1e2a;
+    margin-bottom: 1.2rem;
+}
+
+.hero-text {
+    font-size: 1.05rem;
+    color: #4a4a58;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 0.85rem 1.6rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #1e1e2a;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #F4C21A;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #1e1e2a;
+    border: 1.5px solid rgba(30, 30, 42, 0.15);
+}
+
+.btn-secondary:hover {
+    border-color: #F4C21A;
+    color: #F4C21A;
+}
+
+.hero-right {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 20px;
+}
+
+/* ============ DARK MODE ============ */
+body.dark .hero-title {
+    color: #f1f1f5;
+}
+
+body.dark .hero-text {
+    color: #b0b0bc;
+}
+
+body.dark .btn-primary {
+    background: #F4C21A;
+    color: #1e1e2a;
+}
+
+body.dark .btn-secondary {
+    color: #f1f1f5;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+    .Hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+}

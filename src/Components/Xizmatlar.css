@@ -1,0 +1,88 @@
+.Services {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.serv-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e1e2a;
+    margin-bottom: 0.6rem;
+}
+
+.serv-subtitle {
+    font-size: 1rem;
+    color: #4a4a58;
+    margin-bottom: 2.5rem;
+}
+
+.serv-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.serv-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem 1.6rem;
+    width: 280px;
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(214, 64, 69, 0.08);
+    transition: all 0.2s ease;
+}
+
+.serv-card:hover {
+    border-color: #F4C21A;
+    transform: translateY(-4px);
+}
+
+.serv-icon {
+    font-size: 1.8rem;
+    color: #F4C21A;
+    margin-bottom: 1rem;
+}
+
+.serv-card h3 {
+    font-size: 1.2rem;
+    color: #1e1e2a;
+    margin-bottom: 0.6rem;
+}
+
+.serv-card p {
+    font-size: 0.9rem;
+    color: #4a4a58;
+    line-height: 1.5;
+}
+
+/* ============ DARK MODE ============ */
+body.dark .serv-title {
+    color: #f1f1f5;
+}
+
+body.dark .serv-subtitle {
+    color: #b0b0bc;
+}
+
+body.dark .serv-card {
+    background: #1e1f26;
+    border-color: rgba(244, 194, 26, 0.1);
+}
+
+body.dark .serv-card h3 {
+    color: #f1f1f5;
+}
+
+body.dark .serv-card p {
+    color: #b0b0bc;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 600px) {
+    .serv-card {
+        width: 100%;
+    }
+}

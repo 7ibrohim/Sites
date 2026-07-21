@@ -1,0 +1,77 @@
+{
+  "navbar": {
+    "home": "Home",
+    "courses": "Courses",
+    "results": "Results",
+    "services": "Services"
+  },
+   "hero": {
+    "title": "Write your future in code",
+    "text": "Hands-on courses in Frontend, Backend and Mobile development. Work on real projects and graduate with a portfolio.",
+    "btnPrimary": "Enroll now",
+    "btnSecondary": "View courses"
+  },
+   "directions": {
+    "title": "Our Directions",
+    "subtitle": "Choose the direction that fits you and start learning",
+    "frontend": {
+      "name": "Frontend",
+      "desc": "Build modern interfaces with HTML, CSS, JavaScript and React"
+    },
+    "backend": {
+      "name": "Backend",
+      "desc": "Build server-side apps with Node.js and databases"
+    },
+    "mobile": {
+      "name": "Mobile",
+      "desc": "Build mobile apps with React Native"
+    }
+  },
+  "results": {
+    "title": "Our Results",
+    "subtitle": "The numbers speak for themselves",
+    "graduates": "Graduates",
+    "employed": "Employment rate",
+    "rating": "Average rating"
+  },
+   "services": {
+    "title": "Our Services",
+    "subtitle": "We make the learning process convenient and effective",
+    "mentorship": {
+      "name": "Mentorship",
+      "desc": "A personal mentor and regular feedback for every student"
+    },
+    "projects": {
+      "name": "Hands-on Projects",
+      "desc": "Work on projects that match real market requirements"
+    },
+    "support": {
+      "name": "Ongoing Support",
+      "desc": "Support during the course and after graduation"
+    }
+  },
+  "enroll": {
+    "title": "Enroll in a course",
+    "subtitle": "Leave your details, we'll contact you soon",
+    "name": "Full name",
+    "phone": "Phone number",
+    "course": "Direction",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "success": "Your request has been received! We'll contact you soon.",
+    "error": "Something went wrong, please try again."
+  },
+  "contact": {
+    "title": "Start today!",
+    "subtitle": "Leave your details, our specialists will reach out to you"
+  },
+  "footer": {
+    "tagline": "Learn modern IT skills and build your future starting today.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "address": "Namangan, Uzbekistan",
+    "follow": "Follow us",
+    "rights": "All rights reserved."
+  }
+
+}
