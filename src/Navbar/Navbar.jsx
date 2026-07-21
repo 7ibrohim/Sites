@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
-import logo from "../assets/logo.png"
+import logo from "../assets/assets/logo.png"
 import { useTranslation } from 'react-i18next'
 import { MdLanguage } from "react-icons/md";
 import { CiDark } from "react-icons/ci";
