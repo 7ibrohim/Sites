@@ -1,34 +1,33 @@
 import React from 'react'
-import './Page.css'
+import './Pagetwo.css'
 import { useTranslation } from 'react-i18next'
+import { FaLaptopCode, FaServer, FaMobileAlt } from "react-icons/fa"
 
-function Hero() {
+function Directions() {
     const { t } = useTranslation();
 
-    return (
-        <section className="Hero" id="bosh-sahifa">
-            <div className="hero-left">
-                <h1 className="hero-title">{t('hero.title')}</h1>
-                <p className="hero-text">{t('hero.text')}</p>
-                <div className="hero-actions">
-                    <button
-                        className="btn-primary"
-                        onClick={() => document.getElementById('aloqa').scrollIntoView({ behavior: 'smooth' })}
-                    >
-                        {t('hero.btnPrimary')}
-                    </button>
-                    <button
-                        className="btn-secondary"
-                        onClick={() => document.getElementById('kurslar').scrollIntoView({ behavior: 'smooth' })}
-                    >
-                        {t('hero.btnSecondary')}
-                    </button>
-                </div>
-            </div>
+    const courses = [
+        { icon: <FaLaptopCode />, key: "frontend" },
+        { icon: <FaServer />, key: "backend" },
+        { icon: <FaMobileAlt />, key: "mobile" },
+    ];
 
-            
+    return (
+       <section className="Directions" id="kurslar">
+            <h2 className="dir-title">{t('directions.title')}</h2>
+            <p className="dir-subtitle">{t('directions.subtitle')}</p>
+
+            <div className="dir-cards">
+                {courses.map((course) => (
+                    <div className="dir-card" key={course.key}>
+                        <div className="dir-icon">{course.icon}</div>
+                        <h3>{t(`directions.${course.key}.name`)}</h3>
+                        <p>{t(`directions.${course.key}.desc`)}</p>
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }
 
-export default Hero
+export default Directions
