@@ -1,7 +1,6 @@
 import React from 'react'
 import './Page.css'
 import { useTranslation } from 'react-i18next'
-import heroImg from "../assets/page.jpg"
 
 function Hero() {
     const { t } = useTranslation();
