@@ -1,23 +1,13 @@
-import React from 'react'
-import Navbar from './Navbar/Navabar'
-import Footer from "./Footer/Footer"
-import Page from './Home/Page'
-import Pagetwo from './Home/Pagetwo'
-import Natijalar from './Components/Natijalar1.jsx'
-import Xizmatlar from './Components/Xizmatlar.jsx'
-import Telegram from './Components/Telegram.jsx'
-function App() {
-  return (
-    <div>
-      <Navbar/>
-      <Page/>
-      <Pagetwo/>
-      <Natijalar/>
-      <Xizmatlar/>
-      <Telegram/>
-      <Footer/>
-    </div>
-  )
-}
-
-export default App
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import './i18n.js'
+import { BrowserRouter } from 'react-router-dom'
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>,
+)
